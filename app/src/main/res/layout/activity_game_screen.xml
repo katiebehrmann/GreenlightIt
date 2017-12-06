@@ -29,51 +29,60 @@
         android:text="...with a description down here"
         android:textSize="22dp" />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textSize="16dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="playGameAlready"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="$$ LET'S MAKE SOME HITS ALREADY $$"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp" />
+
 
     <TextView
-        android:layout_width="110dp"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:textSize="15dp"
         android:layout_above="@+id/redcircle"
         android:text="Smash this button if you've got a dud :("
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginBottom="10dp"
         android:gravity="center" />
 
     <TextView
-        android:layout_width="110dp"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:textSize="15dp"
         android:layout_above="@+id/greencircle"
         android:layout_alignParentRight="true"
         android:text="Smash this button to greenlight a hit!"
-        android:layout_marginRight="50dp"
+        android:layout_marginRight="40dp"
         android:layout_marginBottom="10dp"
         android:gravity="center" />
 
 
     <ImageButton
         android:id="@+id/redcircle"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="50dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="80dp"
         android:background="@color/windowBackground"
         android:scaleType="centerCrop"
         android:src="@drawable/redcircle" />
 
     <ImageButton
-        android:layout_width="110dp"
-        android:layout_height="110dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:id="@+id/greencircle"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_marginRight="50dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="80dp"
         android:background="@color/windowBackground"
         android:scaleType="centerCrop"
         android:src="@drawable/greencircle" />

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.katiebehrmann.greenlightit.beginGame">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Angel Investors"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="36dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/titleofmovie" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/titleofmovie"
+        android:src="@drawable/angelinvestorsBECHDEL"
+        android:id="@+id/movie_image" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/movie_copy"
+        android:gravity="center"
+        android:layout_below="@+id/movie_image"
+        android:layout_margin="10dp"
+        android:text="@string/angel_investors" />
+
+    <ImageButton
+        android:id="@+id/redcircle"
+        android:onClick="redLight"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/windowBackground"
+        android:scaleType="centerCrop"
+        android:src="@drawable/redcircle" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/greencircle"
+        android:onClick="greenLight"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/windowBackground"
+        android:scaleType="centerCrop"
+        android:src="@drawable/greencircle" />
+
+</RelativeLayout>
