@@ -1,18 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.katiebehrmann.greenlightit.Screen1">
 
     <TextView
+        android:id="@+id/greenlightTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Greenlight It!"
+        android:textColor="@color/colorAccent"
+        android:textSize="64dp"
+        android:textStyle="bold" />
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_margin="8dp"
+        android:id="@+id/logo"
+        android:src="@drawable/slate"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/greenlightTitle" />
+
+    <TextView
+        android:id="@+id/explanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/homepage"
+        android:textSize="22dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/explanation"
+        android:text="PLAY THE GAME"
+        android:background="@color/colorPrimaryDark"
+        android:textSize="16dp"
+        android:onClick="playGame"
+        android:padding="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

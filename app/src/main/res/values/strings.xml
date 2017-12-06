@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">GreenlightIt</string>
+    <string name="app_name">Greenlight It!</string>
+    <string name="homepage">"Welcome to Hollywood, kid! You made it. You're a big shot producer now. Sure, Hollywood's biased, but that's why we need you. You're about to greenlight the biggest blockbusters of the season!"</string>
 </resources>
